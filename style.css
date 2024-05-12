@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* Primary */
+  --Light-red: hsla(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Gradients */
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-items: center;
+  max-height: 100vh;
+}
+.container {
+  display: flex;
+  width: 600px;
+  border-radius: 30px;
+  box-shadow: 1px 0 20px 2px rgb(0, 0, 0, 20%);
+}
+.left__container {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-background),
+    var(--Cobalt-blue)
+  );
+  width: 300px;
+  text-align: center;
+  border-radius: 30px;
+}
+.results {
+  color: var(--Light-lavender);
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    var(--Violet-blue-circle),
+    var(--Persian-blue-circle)
+  );
+  margin: 2rem auto 2rem;
+}
+.big--score {
+  color: var(--White);
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+.small--score {
+  color: var(--Light-lavender);
+  font-weight: 400;
+}
+.result .result--rank {
+  color: var(--White);
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+p {
+  color: var(--Light-lavender);
+  font-size: 1cqmax;
+  font-weight: 400;
+  padding: 1rem 3rem 0 3rem;
+}
+.right__container {
+  height: 420px;
+}
+.summary {
+  padding: 20px;
+}
+.scores {
+  padding-left: 20px;
+  width: calc(100% - 10px);
+}
+.score__reaction,
+.score__memory,
+.score__Visual,
+.score__verbal {
+  display: flex;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.score__verbal .bold--score,
+.score__Visual .bold--score {
+  margin-left: 1rem;
+}
+.score__reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: var(--Light-red);
+}
+.score__memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  color: var(--Orangey-yellow);
+}
+.score__verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: var(--Green-teal);
+}
+.score__Visual {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  color: var(--Cobalt-blue);
+}
+.score__container {
+  display: flex;
+}
+.score__container span {
+  margin-right: 5rem;
+}
+.score__container img {
+  margin-right: 0.5rem;
+}
+.bold--score {
+  color: black;
+  font-weight: 500;
+}
+.max--score {
+  color: var(--Light-lavender);
+  font-weight: 600;
+}
+
+.btn {
+  background-color: var(--Dark-gray-blue);
+  width: 253px;
+  height: 53px;
+  margin: 1rem;
+  border-radius: 50px;
+  color: var(--White);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-background),
+    var(--Cobalt-blue)
+  );
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 760px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .left__container {
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .scores {
+    width: calc(100% - 40px)
+  }
+  .score__reaction .bold--score,.score__memory .bold--score{
+    margin-left: calc(100% - 240px);
+ }
+ 
+    .score__verbal .bold--score,.score__Visual .bold--score{
+        margin-left: calc(100% - 230px);
+    }
+    .btn{
+        width: calc(100% - 50px);
+    }
+}
+@media(min-width:900px){
+    .container{
+        margin-top: 6rem;
+    }
+}
