@@ -136,7 +136,7 @@ p {
 }
 .max--score {
   color:hsl(224, 30%, 27%) ;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .btn {
@@ -182,7 +182,7 @@ p {
     font-size: inherit;
   }
   p {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     margin-bottom: 3rem;
   }
   .right__container{
