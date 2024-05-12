@@ -190,7 +190,7 @@ p {
         margin-left: calc(100% - 230px);
     }
     .btn{
-        width: calc(100% - 50px);
+        width: calc(100% - 30px);
     }
 }
 @media(min-width:900px){
