@@ -180,7 +180,7 @@ p {
     margin-bottom: 3rem;
   }
   .scores {
-    width: calc(100% - 40px)
+    width: calc(100% - 20px)
   }
   .score__reaction .bold--score,.score__memory .bold--score{
     margin-left: calc(100% - 240px);
