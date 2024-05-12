@@ -179,22 +179,30 @@ p {
     font-size: 1.2rem;
     margin-bottom: 3rem;
   }
-  .scores {
-    width: calc(100% - 20px)
+  .right__container{
+    height: auto;
   }
-  .score__reaction .bold--score,.score__memory .bold--score{
+  .scores {
+    width: calc(100% - 20px);
+  }
+  .score__reaction,.score__memory,.score__verbal,.score__Visual{
+    padding: 23px;
+  }
+  .score__reaction .bold--score,
+  .score__memory .bold--score {
     margin-left: calc(100% - 240px);
- }
- 
-    .score__verbal .bold--score,.score__Visual .bold--score{
-        margin-left: calc(100% - 230px);
-    }
-    .btn{
-        width: calc(100% - 30px);
-    }
+  }
+
+  .score__verbal .bold--score,
+  .score__Visual .bold--score {
+    margin-left: calc(100% - 230px);
+  }
+  .btn {
+    width: calc(100% - 30px);
+  }
 }
-@media(min-width:900px){
-    .container{
-        margin-top: 6rem;
-    }
+@media (min-width: 900px) {
+  .container {
+    margin-top: 6rem;
+  }
 }
