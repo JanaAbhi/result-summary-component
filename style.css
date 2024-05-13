@@ -77,7 +77,7 @@ body {
 }
 p {
   color: var(--Light-lavender);
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
   padding: 1rem 3rem 0 3rem;
 }
@@ -139,7 +139,7 @@ p {
 }
 .max--score {
   color:hsl(224, 30%, 27%) ;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn {
@@ -185,8 +185,7 @@ p {
     font-size: inherit;
   }
   p {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.8rem;
   }
   .right__container{
     height: auto;
