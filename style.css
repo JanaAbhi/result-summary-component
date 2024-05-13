@@ -59,7 +59,7 @@ body {
     var(--Violet-blue-circle),
     var(--Persian-blue-circle)
   );
-  margin: 2rem auto 2rem;
+  margin: 2rem auto 1%;
 }
 .big--score {
   color: var(--White);
@@ -82,7 +82,7 @@ p {
   padding: 1rem 3rem 0 3rem;
 }
 .right__container {
-  height: 450px;
+  width: auto;
 }
 .summary {
   padding: 20px;
@@ -124,6 +124,9 @@ p {
 .score__container {
   display: flex;
 }
+.items{
+  font-weight: 600;
+}
 .score__container span {
   margin-right: 5rem;
 }
@@ -136,7 +139,7 @@ p {
 }
 .max--score {
   color:hsl(224, 30%, 27%) ;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .btn {
